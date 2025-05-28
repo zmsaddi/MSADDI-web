@@ -163,10 +163,10 @@ function HomePage({ language }) {
   return (
     <div className="page-container home-page">
       {/* قسم البانر الرئيسي - تم تحديث العناصر لتغطية عرض الشاشة بالكامل */}
-      <div className="hero-banner-wrapper w-full">
-        <div className="hero-banner w-full" style={{ backgroundImage: `url(${heroBg})` }}>
-          <div className="hero-overlay w-full">
-            <div className="container mx-auto px-4">
+      <div className="hero-banner-wrapper">
+        <div className="hero-banner" style={{ backgroundImage: `url(${heroBg})` }}>
+          <div className="hero-overlay">
+            <div className="container">
               <div className="hero-content-wrapper">
                 <div className="hero-text">
                   <h1 className="hero-title">{t.hero.title}</h1>
@@ -216,8 +216,8 @@ function HomePage({ language }) {
       </div>
       
       {/* قسم الخدمات */}
-      <div className="services-section w-full">
-        <div className="container mx-auto px-4">
+      <div className="services-section">
+        <div className="container">
           <div className="section-header">
             <h2>{t.services.title}</h2>
             <p>{t.services.description}</p>
@@ -253,8 +253,8 @@ function HomePage({ language }) {
       </div>
       
       {/* قسم المميزات الرئيسية */}
-      <div className="key-features-section w-full">
-        <div className="container mx-auto px-4">
+      <div className="key-features-section">
+        <div className="container">
           <div className="section-header">
             <h2>{t.keyFeatures.title}</h2>
             <p>{t.keyFeatures.description}</p>
@@ -294,8 +294,8 @@ function HomePage({ language }) {
       </div>
       
       {/* قسم معلومات الاتصال */}
-      <div className="contact-info-section w-full">
-        <div className="container mx-auto px-4">
+      <div className="contact-info-section">
+        <div className="container">
           <div className="section-header">
             <h2>{t.contact.title}</h2>
           </div>

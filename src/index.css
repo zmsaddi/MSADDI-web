@@ -24,10 +24,8 @@ a:hover {
 
 body {
   margin: 0;
-  /* تم إزالة display: flex */
-  /* تم إزالة place-items: center */
-  /* تم إزالة min-width: 320px */
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -65,14 +63,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-/* إضافة قاعدة لمنع التمرير الأفقي */
-html, body {
-  overflow-x: hidden;
-}
-
-/* قاعدة حماية لضمان عرض كامل للعناصر العليا */
-#root, main, .page-wrapper, .app-container { 
-  width: 100% !important; 
 }
