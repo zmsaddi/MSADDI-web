@@ -71,3 +71,8 @@ button:focus-visible {
 html, body {
   overflow-x: hidden;
 }
+
+/* قاعدة حماية لضمان عرض كامل للعناصر العليا */
+#root, main, .page-wrapper, .app-container { 
+  width: 100% !important; 
+}
