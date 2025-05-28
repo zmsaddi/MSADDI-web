@@ -1,359 +1,318 @@
 /* تحديث CSS للصور المحسنة */
 
-/* تحسين صورة البانر الرئيسي */
-.hero-banner {
-  background-image: url('../assets/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
+/* تحسين عرض البانر الرئيسي ليغطي عرض الشاشة بالكامل */
+.hero-banner-wrapper {
+  width: 100%;
+  min-height: 70vh;
   position: relative;
-  color: white;
+  overflow: hidden;
 }
 
-/* إضافة طبقة تراكب لتحسين التباين مع النص */
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+.hero-banner {
+  width: 100%;
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-xl);
+  position: relative;
 }
 
-/* تحسين عرض الصور في بطاقات الخدمات */
-.service-image img {
+.hero-overlay {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px var(--shadow-color);
-  transition: transform var(--transition-speed);
-  loading: lazy;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
-.service-image img:hover {
-  transform: scale(1.02);
+.hero-content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* تحسين عرض الصور في صفحة الخدمات */
+.hero-text {
+  max-width: 600px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* تحسينات للأجهزة المحمولة */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* تحسينات للشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* تنسيق صفحة الخدمات */
+.services-page-banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.services-page-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.services-page-banner-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+/* تنسيق صفحة الاتصال */
+.contact-page-banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-page-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-page-banner-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+/* تنسيق بطاقات الخدمات */
+.service-detail-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .service-detail-image {
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  object-fit: contain;
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px var(--shadow-color);
-  margin-bottom: var(--spacing-md);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في المقالات والمحتوى */
-.content-image {
-  width: 100%;
-  height: auto;
-  border-radius: var(--border-radius);
-  margin: var(--spacing-md) 0;
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في المعرض */
-.gallery-image {
-  width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: var(--border-radius);
-  transition: transform var(--transition-speed);
+}
+
+.service-detail-content {
+  padding: 1.5rem;
+}
+
+.service-detail-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.service-detail-description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.service-detail-specs {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.service-detail-specs h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.service-detail-specs ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.service-detail-specs li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.service-detail-specs li::before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 0.5em;
+}
+
+/* تنسيق نموذج الاتصال */
+.contact-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+}
+
+.form-submit {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
   cursor: pointer;
-  loading: lazy;
+  transition: background-color 0.3s;
 }
 
-.gallery-image:hover {
-  transform: scale(1.05);
+.form-submit:hover {
+  background-color: var(--primary-color-dark);
 }
 
-/* تحسين عرض الصور في الشهادات */
-.testimonial-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--primary-color);
-  loading: lazy;
+/* تنسيق معلومات الاتصال */
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
-/* تحسين عرض الصور في الشركاء */
-.partner-logo {
-  max-width: 150px;
-  height: auto;
-  filter: grayscale(100%);
-  opacity: 0.7;
-  transition: all var(--transition-speed);
-  loading: lazy;
+.contact-info-item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
 }
 
-.partner-logo:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
-/* تحسين عرض الصور في الفريق */
-.team-member-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-md);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في المشاريع */
-.project-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في الشعار */
-.logo-image {
-  height: 50px;
-  width: auto;
-}
-
-/* تحسين عرض الصور في الأيقونات */
-.icon-image {
-  width: 24px;
-  height: 24px;
-}
-
-/* تحسين عرض الصور في الخلفيات */
-.bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في الشرائح */
-.slide-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في المنتجات */
-.product-image {
-  width: 100%;
-  height: 250px;
-  object-fit: contain;
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في المقالات */
-.article-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في الأحداث */
-.event-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-md);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في الشهادات */
-.certificate-image {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  padding: var(--spacing-sm);
-  background-color: white;
-  box-shadow: 0 2px 4px var(--shadow-color);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في الجوائز */
-.award-image {
-  width: 100px;
-  height: auto;
-  margin-bottom: var(--spacing-sm);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في وسائل التواصل الاجتماعي */
-.social-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-md);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في المدونة */
-.blog-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في الفيديو */
-.video-thumbnail {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  position: relative;
-  cursor: pointer;
-  loading: lazy;
-}
-
-.video-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.7);
+.contact-info-icon {
+  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 24px;
+  color: #fff;
 }
 
-/* تحسين عرض الصور في الخريطة */
-.map-image {
+.contact-info-text h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contact-info-text p {
+  margin: 0;
+  color: #666;
+}
+
+/* تنسيق الخريطة */
+.contact-map {
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.contact-map iframe {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-md);
-  loading: lazy;
-}
-
-/* تحسين عرض الصور في الشركاء */
-.partner-logo-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--spacing-lg);
-  margin: var(--spacing-xl) 0;
-}
-
-/* تحسين عرض الصور في الشهادات */
-.testimonial-image-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--spacing-md);
-}
-
-/* تحسين عرض الصور في الفريق */
-.team-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius);
-}
-
-/* تحسين عرض الصور في المشاريع */
-.project-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-
-/* تحسين عرض الصور في المنتجات */
-.product-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius);
-  background-color: white;
-  padding: var(--spacing-md);
-}
-
-/* تحسين عرض الصور في المقالات */
-.article-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-
-/* تحسين عرض الصور في الأحداث */
-.event-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius);
-}
-
-/* تحسين عرض الصور في الشهادات */
-.certificate-image-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--spacing-md);
-}
-
-/* تحسين عرض الصور في الجوائز */
-.award-image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: var(--spacing-md);
-}
-
-/* تحسين عرض الصور في وسائل التواصل الاجتماعي */
-.social-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius);
-}
-
-/* تحسين عرض الصور في المدونة */
-.blog-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-
-/* تحسين عرض الصور في الفيديو */
-.video-thumbnail-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-
-/* تحسين عرض الصور في الخريطة */
-.map-image-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--border-radius);
-  margin-bottom: var(--spacing-md);
+  height: 100%;
+  border: 0;
 }
