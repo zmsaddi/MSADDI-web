@@ -1,0 +1,73 @@
+:root {
+  /* الألوان الأساسية */
+  --primary-color: #0d3b66;
+  --secondary-color: #ffd166;
+  --accent-color: #06d6a0;
+  --text-color: #333;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #17a2b8;
+  
+  /* متغيرات التصميم */
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+  --container-width: 1400px;
+  --header-height: 80px;
+  --footer-height: 60px;
+  
+  /* المسافات */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3rem;
+  
+  /* الطباعة */
+  --font-family-arabic: 'Cairo', sans-serif;
+  --font-family-latin: 'Poppins', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 3rem;
+  
+  /* نقاط التوقف */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+
+/* متغيرات الوضع الداكن */
+.theme-dark {
+  --primary-color: #1a5b96;
+  --secondary-color: #ffda85;
+  --accent-color: #08e8ae;
+  --text-color: #e9ecef;
+  --light-color: #343a40;
+  --dark-color: #f8f9fa;
+  --border-color: #495057;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  
+  /* خلفيات الوضع الداكن */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #2d2d2d;
+}
+
+/* الوضع الفاتح (الافتراضي) */
+.theme-light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+}
