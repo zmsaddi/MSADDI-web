@@ -1,0 +1,159 @@
+[
+  {
+    "id": "laser-cutting",
+    "images": {
+      "icon": "laser-cutting-icon.svg",
+      "main": "../assets/machine-no-bg.png"
+    },
+    "ar": {
+      "title": "قطع الليزر",
+      "description": "نقدم خدمة قطع الصفائح المعدنية بالليزر بدقة عالية وجودة ممتازة. تتميز هذه الخدمة بالسرعة والدقة المتناهية في تنفيذ القطع المعقدة والدقيقة.",
+      "features": [
+        "دقة قطع عالية تصل إلى ±0.1 مم",
+        "مساحة عمل كبيرة 600×200 سم",
+        "قدرة على قطع أشكال معقدة",
+        "سرعة في التنفيذ",
+        "تشطيب ممتاز للحواف",
+        "إمكانية قطع مجموعة متنوعة من المعادن"
+      ],
+      "materials": "المواد المتاحة: الفولاذ، الستانلس ستيل، الألمنيوم، النحاس وغيرها من المعادن بسماكات مختلفة."
+    },
+    "en": {
+      "title": "Laser Cutting",
+      "description": "We offer high-precision laser cutting services for metal sheets with excellent quality. This service is characterized by speed and extreme precision in executing complex and accurate cuts.",
+      "features": [
+        "High cutting precision up to ±0.1 mm",
+        "Large working area 600×200 cm",
+        "Ability to cut complex shapes",
+        "Fast execution",
+        "Excellent edge finishing",
+        "Ability to cut a variety of metals"
+      ],
+      "materials": "Available materials: Steel, Stainless Steel, Aluminum, Copper and other metals in various thicknesses."
+    }
+  },
+  {
+    "id": "bending",
+    "images": {
+      "icon": "bending-icon.svg",
+      "main": "../assets/bending-service.png"
+    },
+    "ar": {
+      "title": "الثني",
+      "description": "نقدم خدمة ثني الصفائح المعدنية بزوايا دقيقة حسب المواصفات المطلوبة. نستخدم أحدث آلات الثني للحصول على نتائج دقيقة ومتناسقة.",
+      "features": [
+        "دقة عالية في زوايا الثني",
+        "إمكانية ثني قطع بأطوال كبيرة",
+        "تنفيذ ثنيات متعددة ومعقدة",
+        "ضمان عدم تشوه المعدن أثناء الثني",
+        "إمكانية ثني مجموعة متنوعة من المعادن"
+      ],
+      "materials": "المواد المتاحة: الفولاذ، الستانلس ستيل، الألمنيوم وغيرها من المعادن بسماكات مختلفة."
+    },
+    "en": {
+      "title": "Bending",
+      "description": "We provide metal sheet bending services with precise angles according to required specifications. We use the latest bending machines to achieve accurate and consistent results.",
+      "features": [
+        "High precision in bending angles",
+        "Ability to bend pieces with large lengths",
+        "Execution of multiple and complex bends",
+        "Ensuring no metal deformation during bending",
+        "Ability to bend a variety of metals"
+      ],
+      "materials": "Available materials: Steel, Stainless Steel, Aluminum and other metals in various thicknesses."
+    }
+  },
+  {
+    "id": "spinning",
+    "images": {
+      "icon": "spinning-icon.svg",
+      "main": "../assets/spinning-service.png"
+    },
+    "ar": {
+      "title": "البلص",
+      "description": "نقدم خدمة البلص للصفائح المعدنية لإنتاج أشكال دائرية ومخروطية. يتم تثبيت صفيحة معدنية على قوالب مخصصة لإنتاج الشكل المطلوب.",
+      "features": [
+        "إنتاج أشكال دائرية ومخروطية بدقة عالية",
+        "إمكانية تنفيذ أقطار مختلفة",
+        "جودة عالية في التشطيب النهائي",
+        "تنفيذ تصاميم مخصصة حسب الطلب",
+        "مناسب لمجموعة متنوعة من التطبيقات الصناعية"
+      ],
+      "materials": "المواد المتاحة: الفولاذ، الستانلس ستيل، الألمنيوم، النحاس وغيرها من المعادن المناسبة للتشكيل."
+    },
+    "en": {
+      "title": "Spinning",
+      "description": "We provide spinning services for metal sheets to produce circular and conical shapes. Metal sheets are fixed on custom molds to produce the required shape.",
+      "features": [
+        "Production of circular and conical shapes with high precision",
+        "Ability to execute different diameters",
+        "High quality in final finishing",
+        "Execution of custom designs upon request",
+        "Suitable for a variety of industrial applications"
+      ],
+      "materials": "Available materials: Steel, Stainless Steel, Aluminum, Copper and other metals suitable for forming."
+    }
+  },
+  {
+    "id": "welding",
+    "images": {
+      "icon": "welding-icon.svg",
+      "main": "../assets/welding-service.png"
+    },
+    "ar": {
+      "title": "اللحام",
+      "description": "نقدم خدمات لحام متخصصة للصفائح المعدنية بمختلف أنواعها. نستخدم تقنيات لحام متقدمة لضمان جودة عالية ومتانة في الوصلات.",
+      "features": [
+        "لحام دقيق للصفائح الرقيقة والسميكة",
+        "تقنيات لحام متعددة (TIG، MIG، لحام نقطي)",
+        "دقة عالية في التنفيذ",
+        "اختبار جودة الوصلات",
+        "إمكانية لحام مختلف أنواع المعادن"
+      ],
+      "materials": "المواد المتاحة: الفولاذ، الستانلس ستيل، الألمنيوم وغيرها من المعادن القابلة للحام."
+    },
+    "en": {
+      "title": "Welding",
+      "description": "We offer specialized welding services for various types of metal sheets. We use advanced welding techniques to ensure high quality and durability in joints.",
+      "features": [
+        "Precise welding for thin and thick sheets",
+        "Multiple welding techniques (TIG, MIG, spot welding)",
+        "High precision in execution",
+        "Joint quality testing",
+        "Ability to weld different types of metals"
+      ],
+      "materials": "Available materials: Steel, Stainless Steel, Aluminum and other weldable metals."
+    }
+  },
+  {
+    "id": "finishing",
+    "images": {
+      "icon": "finishing-icon.svg",
+      "main": "../assets/finishing-service.png"
+    },
+    "ar": {
+      "title": "التشطيب",
+      "description": "نقدم خدمات تشطيب متنوعة للصفائح المعدنية لتحسين المظهر والأداء. تشمل خدماتنا الطلاء، التلميع، المعالجة السطحية وغيرها.",
+      "features": [
+        "طلاء بمختلف الألوان والأنواع",
+        "تلميع للحصول على سطح لامع",
+        "معالجة ضد التآكل والصدأ",
+        "تشطيبات مختلفة حسب الطلب",
+        "جودة عالية في التنفيذ"
+      ],
+      "materials": "متوفر لجميع أنواع المعادن المصنعة لدينا."
+    },
+    "en": {
+      "title": "Finishing",
+      "description": "We provide various finishing services for metal sheets to improve appearance and performance. Our services include painting, polishing, surface treatment and more.",
+      "features": [
+        "Coating with various colors and types",
+        "Polishing for a glossy surface",
+        "Anti-corrosion and rust treatment",
+        "Different finishes upon request",
+        "High quality in execution"
+      ],
+      "materials": "Available for all types of metals manufactured by us."
+    }
+  }
+]
