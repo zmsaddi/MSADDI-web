@@ -1,0 +1,359 @@
+/* تحديث CSS للصور المحسنة */
+
+/* تحسين صورة البانر الرئيسي */
+.hero-banner {
+  background-image: url('../assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  color: white;
+}
+
+/* إضافة طبقة تراكب لتحسين التباين مع النص */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+}
+
+/* تحسين عرض الصور في بطاقات الخدمات */
+.service-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform var(--transition-speed);
+  loading: lazy;
+}
+
+.service-image img:hover {
+  transform: scale(1.02);
+}
+
+/* تحسين عرض الصور في صفحة الخدمات */
+.service-detail-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  margin-bottom: var(--spacing-md);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في المقالات والمحتوى */
+.content-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin: var(--spacing-md) 0;
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في المعرض */
+.gallery-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-speed);
+  cursor: pointer;
+  loading: lazy;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+/* تحسين عرض الصور في الشهادات */
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الشركاء */
+.partner-logo {
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all var(--transition-speed);
+  loading: lazy;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* تحسين عرض الصور في الفريق */
+.team-member-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في المشاريع */
+.project-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الشعار */
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+
+/* تحسين عرض الصور في الأيقونات */
+.icon-image {
+  width: 24px;
+  height: 24px;
+}
+
+/* تحسين عرض الصور في الخلفيات */
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الشرائح */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في المنتجات */
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في المقالات */
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الأحداث */
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الشهادات */
+.certificate-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm);
+  background-color: white;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الجوائز */
+.award-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: var(--spacing-sm);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في وسائل التواصل الاجتماعي */
+.social-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في المدونة */
+.blog-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الفيديو */
+.video-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  position: relative;
+  cursor: pointer;
+  loading: lazy;
+}
+
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+/* تحسين عرض الصور في الخريطة */
+.map-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+  loading: lazy;
+}
+
+/* تحسين عرض الصور في الشركاء */
+.partner-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+/* تحسين عرض الصور في الشهادات */
+.testimonial-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+/* تحسين عرض الصور في الفريق */
+.team-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+/* تحسين عرض الصور في المشاريع */
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+/* تحسين عرض الصور في المنتجات */
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  background-color: white;
+  padding: var(--spacing-md);
+}
+
+/* تحسين عرض الصور في المقالات */
+.article-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+/* تحسين عرض الصور في الأحداث */
+.event-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+/* تحسين عرض الصور في الشهادات */
+.certificate-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+/* تحسين عرض الصور في الجوائز */
+.award-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+/* تحسين عرض الصور في وسائل التواصل الاجتماعي */
+.social-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+/* تحسين عرض الصور في المدونة */
+.blog-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+/* تحسين عرض الصور في الفيديو */
+.video-thumbnail-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+/* تحسين عرض الصور في الخريطة */
+.map-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+}
